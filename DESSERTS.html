@@ -1,0 +1,1015 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/thestyleme.css" rel="stylesheet" />
+    <link href="css/style2.css" rel="stylesheet" />
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+
+    <style>
+        @font-face {
+            font-family: 'ARB-187 Modern Caps';
+            src: url('font/ARB-187 Modern Caps.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Brandon_reg_it';
+            src: url('font/Brandon_reg_it.otf') format('opentype');
+        }
+
+        .logo {
+            height: 100px;
+            width: 200px;
+        }
+
+        .nav-item .nav-link {
+            font-family: 'ARB-187 Modern Caps';
+            color: black !important;
+            border-right: 2px solid;
+            border-color: rgb(168, 111, 60);
+            /*font-weight: bold;*/
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .bord {
+            border-right: none !important;
+            margin-right: 10% !important;
+        }
+
+        .nav-item .nav-link:hover {
+            color: rgb(226, 33, 28);
+            border-bottom: 3px solid;
+            border-color: rgb(226, 33, 28);
+        }
+
+        .nav-link .hov:hover {
+            color: rgb(226, 33, 28);
+        }
+
+        .bton {
+            background: rgb(164, 105, 52);
+            color: white;
+            /*font-family: 'ARB-187 Modern Caps';*/
+            font-weight: bold;
+            border-radius: 5px;
+            border-color: rgb(164, 105, 52) !important;
+            box-shadow: none;
+            /*width: 7%;*/
+            width: 100px;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        .cQSLQU {
+            /*font-family: 'ARB-187 Modern Caps';*/
+            background-color: rgb(226, 33, 28);
+            /*height: 100% !important;*/
+            width: 100%;
+            margin-right: -15px;
+        }
+
+        .oop {
+            font-weight: bold;
+            color: white;
+        }
+
+        .cQSLQU .oop:hover {
+            color: white;
+        }
+
+        .s1 {
+            font-size: 20px;
+        }
+
+        .o2 {
+            font-size: 28px;
+        }
+
+        .reed {
+            /*padding:10%;*/
+            text-align: center;
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .navbar-toggler > span {
+            float: right;
+            width: 150px;
+            height: -1px;
+            /*position: relative;
+              top: 10px;*/
+            transition: all 0.3s ease 0s;
+        }
+
+        @media (max-width: 1024px ) and (min-height: 1366px) {
+            .med {
+                /*width: 100%;*/
+                text-align: start !important;
+            }
+
+            .nav-item .nav-link {
+                font-family: 'ARB-187 Modern Caps';
+                color: black !important;
+                border-right: 2px solid;
+                border-color: rgb(168, 111, 60);
+                font-weight: bold;
+                align-items: center;
+                font-size: 15px !important;
+            }
+
+                .nav-item .nav-link > span {
+                    margin: -2px !important;
+                }
+
+            .im12 {
+                width: 30%;
+            }
+
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                width: 25%;
+                padding: 5px;
+                margin: 2px;
+            }
+
+            .med {
+                margin-top: 2% !important;
+            }
+        }
+
+        .im12 {
+            width: 30%;
+        }
+
+
+        @media (min-width: 768px) {
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                /*width: 100px;*/
+                /*padding: 5px;
+                  margin: 2px;*/
+            }
+
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                width: 25%;
+                padding: 5px;
+                margin: 2px;
+            }
+        }
+
+
+        @media (max-width: 540px) {
+            .navbar-toggler-icon {
+                margin-right: -50%;
+            }
+        }
+
+        @media (max-width: 360px) {
+
+            .navbar-toggler-icon {
+                margin-right: -40%;
+            }
+
+            @media (max-width: 1277px) {
+                .nav-item .nav-link {
+                    font-family: 'ARB-187 Modern Caps';
+                    color: black !important;
+                    border-right: 2px solid;
+                    border-color: rgb(168, 111, 60);
+                    font-weight: bold;
+                    align-items: center;
+                    font-size: 13px !important;
+                }
+            }
+
+
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                width: 20%;
+                font-size: 10px;
+                /*padding: 5px;
+                  margin: 2px;*/
+            }
+        }
+
+        @media (max-width: 280px) {
+            .navbar-toggler > span {
+                float: right;
+                width: 100px;
+                height: -1px;
+                /*position: relative;
+              top: 10px;*/
+                transition: all 0.3s ease 0s;
+            }
+
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                width: 20%;
+                font-size: 10px;
+                /*padding: 5px;
+                  margin: 2px;*/
+            }
+
+            .im12 {
+                width: 35%;
+            }
+
+            .navbar-toggler-icon {
+                margin-right: -50%;
+            }
+
+            .nav-item .nav-link {
+                font-family: 'ARB-187 Modern Caps';
+                color: black !important;
+                border-right: 2px solid;
+                border-color: rgb(168, 111, 60);
+                /*font-weight: bold;*/
+                align-items: center;
+                font-size: 15px;
+            }
+        }
+        /*.col-sm-12  {
+              background-color: #e7e9e6;
+          }*/
+
+        /*.navbar-toggler-icon {
+            margin-right: -60%;
+        }*/
+
+        .cQSLQU {
+            background-color: rgb(226, 33, 28) !important;
+        }
+
+        .fot {
+            font-family: 'ARB-187 Modern Caps';
+            color: black;
+            font-weight: bold;
+            margin-top: 8%;
+        }
+
+        .iconn {
+            width: 40px;
+            height: 40px;
+            margin: 7px;
+        }
+
+        .ons {
+            margin-top: 5% !important;
+        }
+
+        .mid .ons a {
+            font-weight: bold;
+            margin-right: 10px;
+            color: black;
+        }
+
+            .mid .ons a:hover {
+                color: rgb(226, 33, 28);
+            }
+
+        .ons2 {
+            margin-top: 3% !important;
+        }
+
+        .mid .ons2 a {
+            margin-right: 12px;
+            color: black;
+        }
+
+            .mid .ons2 a:hover {
+                color: rgb(226, 33, 28);
+            }
+
+        .ons3 {
+            margin-top: 3% !important;
+        }
+
+        .mid .ons3 a {
+            margin-right: 12px;
+            color: black;
+            text-decoration: underline;
+            padding-right: 10px;
+            border-right: 1px solid black;
+            font-size: 13px;
+        }
+
+            .mid .ons3 a:hover {
+                color: rgb(226, 33, 28);
+                border-right: 1px solid rgb(226, 33, 28);
+                text-decoration: underline;
+                text-decoration-color: rgb(226, 33, 28);
+            }
+
+        header {
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            background-color: white;
+            box-shadow: none;
+            /*margin-bottom: 55%;*/
+        }
+        /*footer{
+              margin-top:5%;
+          }*/
+        .menu {
+            display: inline-block;
+            width: 100% !important;
+            margin-top: 7%;
+            background-size: contain;
+            position: relative;
+            background-color: #e7e9e6;
+            /*height:40px;*/
+        }
+
+        .men {
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 18px;
+            background-color: #e7e9e6;
+        }
+
+        .colbtn:hover {
+            background-color: rgb(226, 33, 28);
+            color: white;
+        }
+
+        .colbtn .men:hover {
+            background-color: rgb(226, 33, 28);
+            color: white;
+            border: 1px solid rgb(226, 33, 28);
+        }
+        /*.colbtn .men:active {
+            background-color: rgb(226, 33, 28) !important;
+            color: white !important;
+            border: 1px solid rgb(226, 33, 28) !important;
+        }*/
+        .active, .men:hover {
+            background-color: rgb(226, 33, 28);
+            color: white;
+            border: 1px solid rgb(226, 33, 28);
+        }
+
+        @media (min-width: 330px) and (max-width: 385px) {
+            .menu {
+                margin-top: 40%;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 450px) {
+            .menu {
+                margin-top: 37%;
+            }
+
+            /* .navbar-brand {
+                visibility: inherit;
+            }*/
+        }
+
+
+        @media (min-width: 538px) and (max-width: 541px) {
+
+            .menu {
+                margin-top: 31%;
+            }
+        }
+
+        @media (min-width: 767px) and (max-width: 769px) {
+            .menu {
+                margin-top: 24%;
+            }
+        }
+
+
+        @media (max-width: 280px) {
+            .menu {
+                margin-top: 95%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .menu {
+                margin-top: 85%;
+            }
+        }
+
+        /* @media (min-width: 900px) and (max-width: 1500px) {
+            .menu {
+                margin-top: 10%;
+            }
+        }*/
+
+        .trw {
+            font-family: 'ARB-187 Modern Caps';
+            color: black !important;
+            font-size: 200%;
+        }
+
+        .backg {
+            background-image: url('img/diamond-background.png');
+            display: inline-block;
+            width: 100% !important;
+            /*margin-top: -165%;*/
+            /*background-size:contain;*/
+            position: relative;
+            background-repeat: repeat;
+        }
+
+        .card-title {
+            font-family: 'ARB-187 Modern Caps';
+            color: black !important;
+        }
+
+        .card-text {
+            /*font-family: 'Brandon_reg_it';*/
+            font-family: BrandonGrotesque-Regular, Arial, Helvetica;
+            /*font-family:'Bradley Hand ITC';*/
+        }
+
+        .botn {
+            background-color: rgb(226, 33, 28);
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            /*width: 50%;
+            height: 50px;*/
+            font-size: initial;
+        }
+
+        .navbar-brand {
+            visibility: hidden;
+        }
+
+        .img {
+            background-image: url("https://koala-marketing-api-production.s3.amazonaws.com/round-table-pizza/assets/wings-with-sauce.jpeg");
+            display: inline-block;
+            width: 100% !important;
+            flex: 0 0 430px;
+            background-repeat: no-repeat;
+            /*  background-position: center center;*/
+            background-size: cover;
+        }
+
+        .xx {
+            background-image: url('img/diamond-background.png');
+            display: inline-block;
+            width: 100% !important;
+            /*margin-top: -165%;*/
+            /*background-size:contain;*/
+            position: relative;
+            background-repeat: repeat;
+        }
+
+        .size_list li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .list {
+            border-right: 1px solid black;
+            margin-right: 2px;
+            /*padding:2px;*/
+            padding-right: 4px !important;
+        }
+
+        .deco {
+            font-family: 'ARB-187 Modern Caps';
+        }
+
+        .gf_txt {
+            position: absolute;
+            bottom: -0.5rem;
+            left: 2%;
+            font-size: 1rem;
+            text-transform: none;
+        }
+
+        .sub_section .img {
+            flex: 0 0 430px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .sub_section {
+            display: flex;
+            min-height: 234px;
+        }
+
+
+
+
+
+
+
+
+
+        @media (min-width: 330px) and (max-width: 385px) {
+            .menu {
+                margin-top: 40%;
+            }
+
+            .med .bton {
+                width: 20%;
+            }
+        }
+
+
+
+
+
+        @media (max-width: 768px) {
+            /*.img {
+                display: list-item;
+                order: 2;
+                height: 400px;
+            }*/
+
+
+            /* h1{
+               font-size:200% !important;
+            }*/
+        }
+
+
+
+        @media (min-width: 400px) and (max-width: 450px) {
+            .menu {
+                margin-top: 37%;
+            }
+
+            /*.navbar-brand {
+                visibility: inherit;
+            }*/
+        }
+
+        @media (max-width: 280px) {
+            .menu {
+                margin-top: 95%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .menu {
+                margin-top: 44% !important;
+            }
+        }
+
+        @media (min-width: 1220px) and (max-width: 1500px) {
+            .menu {
+                margin-top: 8%;
+            }
+        }
+
+        @media (min-width: 1122px) and (max-width: 1220px) {
+            .menu {
+                margin-top: 9%;
+            }
+        }
+
+        @media (min-width: 993px) and (max-width: 1122px) {
+            .menu {
+                margin-top: 10%;
+            }
+        }
+
+        @media (min-width: 940px) and (max-width: 991px) {
+            .menu {
+                margin-top: 21%;
+            }
+        }
+
+
+        @media (min-width: 850px) and (max-width: 940px) {
+            .menu {
+                margin-top: 22%;
+            }
+        }
+
+        @media (min-width: 780px) and (max-width: 850px) {
+            .menu {
+                margin-top: 23%;
+            }
+        }
+
+
+        @media (min-width: 720px) and (max-width: 780px) {
+            .menu {
+                margin-top: 24%;
+            }
+        }
+
+
+        @media (min-width:650px) and (max-width: 720px) {
+            .menu {
+                margin-top: 25%;
+            }
+        }
+
+
+        @media (min-width:600px) and (max-width: 650px) {
+            .menu {
+                margin-top: 26%;
+            }
+        }
+
+        @media (min-width:570px) and (max-width: 600px) {
+            .menu {
+                margin-top: 27%;
+            }
+        }
+
+
+        @media (min-width:550px) and (max-width: 570px) {
+            .menu {
+                margin-top: 28%;
+            }
+        }
+
+
+
+        @media (min-width:510px) and (max-width: 550px) {
+            .menu {
+                margin-top: 31%;
+            }
+        }
+
+        @media (min-width:465px) and (max-width: 510px) {
+            .menu {
+                margin-top: 33%;
+            }
+        }
+
+        @media (min-width:424px) and (max-width: 465px) {
+            .menu {
+                margin-top: 35%;
+            }
+        }
+
+
+        @media (min-width:330px) and (max-width: 350px) {
+            .menu {
+                margin-top: 43%;
+            }
+        }
+
+        @media (min-width:320px) and (max-width: 330px) {
+            .menu {
+                margin-top: 45%;
+            }
+        }
+
+        @media (min-width:300px) and (max-width: 320px) {
+            .menu {
+                margin-top: 47%;
+            }
+
+            .bton {
+                width: 23%;
+            }
+        }
+
+
+        @media (min-width:262px) and (max-width: 282px) {
+            .menu {
+                margin-top: 51% !important;
+            }
+
+            .bton {
+                font-size: 7px;
+            }
+        }
+        /*
+        .fex {
+            display: flex;
+            min-height: 234px;
+        }*/
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <header>
+        <!--border-bottom: 2px solid rgb(164, 105, 52);-->
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark " style="">
+            <div class="container-fluid">
+                <div class="row ro">
+                    <div class="col-md-2 col- col-sm-6 col-6">
+                        <a href="basic.html">
+                            <img src="img/logo.png" class="img-fluid logo mr-5" />
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="color: rgb(226, 33, 28);"><i class="fas fa-align-justify"></i></span>
+                    </button>
+                    <div class="col-md-4 col-sm-6  col-6 collapse navbar-collapse navbar-collapse1 mr-auto text-center" id="navbarSupportedContent-333">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+
+                                <a class="nav-link " aria-current="page" href="menu.html"> <span class="hov m-3">MENU</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="SPECIALS.html"> <span class="hov m-3"> SPECIALS </span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href=""> <span class="hov m-3">LOCATION </span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link  bord" href="#"> <span class="hov m-3">REWARDS </span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="med   col-sm-12 col-lg-4 col-xl-4 col-12 text-center" style="margin-top:1%; margin-bottom:1%;">
+
+                        <img src="img/12.png" class="img-fluid m-3 im12 h-auto" />
+
+                        <button class="bton mr-2" onclick="window.location.href = 'login.html';">LOG IN</button>
+                        <button class="bton " onclick="window.location.href = 'signin.html';">SIGN UP</button>
+                    </div>
+
+                    <div class="cQSLQU  col-lg-2 col-xl-2 col-sm-12 text-center">
+
+
+                        <a href="" class=" oop ">
+
+                            <p class="reed text-center" style="margin-top: 5%;">
+                                <span class="s1">START YOUR <br /> <span class="o2">ORDER</span></span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg  menu wow zoomIn">
+
+        <div class="container-fluid">
+
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                <ul id="myDIV" class="container-fluid navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                    <li class=" colbtn col-md-2 nav-item wow zoomIn">
+
+                        <button class="men " onclick="window.location.href = 'menu.html';">PIZZA</button>
+                    </li>
+                    <li class="colbtn  col-md-2  nav-item wow zoomIn">
+
+                        <button class="men " onclick="window.location.href = 'APPETIZERS.html';">APPETIZERS</button>
+                    </li>
+                    <li class="colbtn  col-md-2  nav-item wow zoomIn">
+
+
+                        <button class="men " onclick="window.location.href = 'SALADS.html';">SALADS</button>
+                    </li>
+                    <li class="colbtn  col-md-2  nav-item wow zoomIn">
+
+
+                        <button class="men active" onclick="window.location.href = 'DESSERTS.html';">DESSERTS</button>
+
+                    </li>
+                    <li class="colbtn  col-md-2  nav-item wow zoomIn">
+
+                        <button class="men " onclick="window.location.href = 'BEVERAGES.html';">BEVERAGES</button>
+                    </li>
+                    <li class="colbtn  col-md-2  nav-item wow zoomIn">
+
+                        <button class="men " onclick="window.location.href = 'CATERING.html';">CATERING</button>
+                    </li>
+
+
+                </ul>
+
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container-fluid backg">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <h1 class="trw wow zoomIn">DESSERTS</h1>
+            </div>
+            <div class="col-md-12 text-center wow zoomIn">
+                <img src="img/خط.JPG" />
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid mt-5 pl-5 pr-5 mb-5">
+        <div class="row justify-content-center">
+
+            <div class="col-md-3 mt-3">
+                <div class="card wow slideInUp">
+                    <img src="https://koala-marketing-api-production.s3.amazonaws.com/round-table-pizza/assets/cinnamon-twists.jpeg"
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">GARDEN SALAD</h5>
+                        <p class="card-text">
+                            Fresh mixed green salad with mushrooms, tomatoes, cucumbers, carrots and our own garlic Parmesan croutons with choice of dressing.
+                        </p>
+                        <button class="botn "> ORDER NOW </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <footer class="wow zoomIn">
+
+        <div class="container-fluid wow slideInUp">
+            <img src="img/footer.JPG" class="img-fluid" style="height:25px; " />
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="col-md-12 wow slideInUp">
+                        <h4 class="fot">FOLLOW PIZZA ROYALTY</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <img src="img/iconTCFacebook.png" class="img-fluid iconn wow slideInUp" />
+
+                        <img src="img/iconTCTwitter.png" class="img-fluid iconn wow slideInUp" />
+                        <img src="img/iconTCInstagram.png" class="img-fluid iconn wow slideInUp" />
+                    </div>
+                </div>
+                <div class="col-md-8 mid">
+                    <div class="col-md-12 ons wow slideInUp">
+                        <a>About</a>
+                        <a>Press</a>
+                        <a>Careers</a>
+                        <a> Franchising</a>
+                        <a> Fundraising</a>
+                        <a> Catering</a>
+                        <a> Join eClub</a>
+                        <a>  Gift Cards</a>
+                    </div>
+                    <div class="col-md-12 ons2 wow slideInUp">
+                        <a>Contact Us</a>
+                        <a> Book a Party Room</a>
+                        <a> FAQ</a>
+                        <a>  Nutrition Info</a>
+                        <a> Allergen Info</a>
+
+                    </div>
+
+                    <div class="col-md-12 ons3 wow slideInUp">
+                        <a>Privacy Policy</a>
+                        <a> Terms of Use</a>
+                        <a>  Accessibility Statement</a>
+                        <a>  Do Not Sell My Personal Information</a>
+                        <a class="border-right-0">   Site Map</a>
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <p style="font-size:13px;">© 2020 by ROUND TABLE PIZZA A GLOBAL FRANCHISE GROUP® LLC COMPANY</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var head = header.getElementsByClassName("colbtn");
+
+        var btns = head.getElementsByClassName("men");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

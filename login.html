@@ -1,0 +1,1046 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <style>
+        @font-face {
+            font-family: 'ARB-187 Modern Caps';
+            src: url('font/ARB-187 Modern Caps.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Brandon_reg_it';
+            src: url('font/Brandon_reg_it.otf') format('opentype');
+        }
+
+        .logo {
+            height: 100px;
+            width: 200px;
+        }
+
+        .nav-item .nav-link {
+            font-family: 'ARB-187 Modern Caps';
+            color: black !important;
+            border-right: 2px solid;
+            border-color: rgb(168, 111, 60);
+            /*font-weight: bold;*/
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .bord {
+            border-right: none !important;
+            margin-right: 10% !important;
+        }
+
+        .nav-item .nav-link:hover {
+            color: rgb(226, 33, 28);
+            border-bottom: 3px solid;
+            border-color: rgb(226, 33, 28);
+        }
+
+        .nav-link .hov:hover {
+            color: rgb(226, 33, 28);
+        }
+
+        .bton {
+            background: rgb(164, 105, 52);
+            color: white;
+            /*font-family: 'ARB-187 Modern Caps';*/
+            font-weight: bold;
+            border-radius: 5px;
+            border-color: rgb(164, 105, 52) !important;
+            box-shadow: none;
+            /*width: 7%;*/
+            /*width: 20% !important;*/
+            /*height:5%;*/
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .cQSLQU {
+            /*font-family: 'ARB-187 Modern Caps';*/
+            background-color: rgb(226, 33, 28);
+            /*height: 100% !important;*/
+            width: 100%;
+            margin-right: -15px;
+        }
+
+        .oop {
+            font-weight: bold;
+            color: white;
+        }
+
+        .cQSLQU .oop:hover {
+            color: white;
+        }
+
+        .s1 {
+            font-size: 20px;
+        }
+
+        .o2 {
+            font-size: 28px;
+        }
+
+        .reed {
+            /*padding:10%;*/
+            text-align: center;
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .navbar-toggler > span {
+            float: right;
+            width: 150px;
+            height: -1px;
+            /*position: relative;
+              top: 10px;*/
+            transition: all 0.3s ease 0s;
+        }
+
+        @media (max-width: 1024px ) and (min-height: 1366px) {
+            .med {
+                /*width: 100%;*/
+                text-align: start !important;
+            }
+
+            .nav-item .nav-link {
+                font-family: 'ARB-187 Modern Caps';
+                color: black !important;
+                border-right: 2px solid;
+                border-color: rgb(168, 111, 60);
+                font-weight: bold;
+                align-items: center;
+                font-size: 15px !important;
+            }
+
+                .nav-item .nav-link > span {
+                    margin: -2px !important;
+                }
+
+            .im12 {
+                width: 30%;
+            }
+
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                width: 25%;
+                padding: 5px;
+                margin: 2px;
+            }
+
+            .med {
+                margin-top: 2% !important;
+            }
+        }
+
+        .im12 {
+            width: 30%;
+        }
+
+
+        @media (min-width: 768px) {
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                /*width: 100px;*/
+                /*padding: 5px;
+                  margin: 2px;*/
+            }
+
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                width: 25%;
+                padding: 5px;
+                margin: 2px;
+            }
+        }
+
+
+        @media (max-width: 540px) {
+            .navbar-toggler-icon {
+                margin-right: -50%;
+            }
+        }
+
+        @media (max-width: 360px) {
+
+            .navbar-toggler-icon {
+                margin-right: -40%;
+            }
+
+            @media (max-width: 1277px) {
+                .nav-item .nav-link {
+                    font-family: 'ARB-187 Modern Caps';
+                    color: black !important;
+                    border-right: 2px solid;
+                    border-color: rgb(168, 111, 60);
+                    font-weight: bold;
+                    align-items: center;
+                    font-size: 13px !important;
+                }
+            }
+
+
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                width: 20%;
+                font-size: 10px;
+                /*padding: 5px;
+                  margin: 2px;*/
+            }
+        }
+
+        @media (max-width: 280px) {
+            .navbar-toggler > span {
+                float: right;
+                width: 100px;
+                height: -1px;
+                /*position: relative;
+              top: 10px;*/
+                transition: all 0.3s ease 0s;
+            }
+
+            .bton {
+                background: rgb(164, 105, 52);
+                color: white;
+                /*font-family: 'ARB-187 Modern Caps';*/
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: rgb(164, 105, 52) !important;
+                box-shadow: none;
+                /*width: 7%;*/
+                width: 20%;
+                font-size: 10px;
+                /*padding: 5px;
+                  margin: 2px;*/
+            }
+
+            .im12 {
+                width: 35%;
+            }
+
+            .navbar-toggler-icon {
+                margin-right: -50%;
+            }
+
+            .nav-item .nav-link {
+                font-family: 'ARB-187 Modern Caps';
+                color: black !important;
+                border-right: 2px solid;
+                border-color: rgb(168, 111, 60);
+                /*font-weight: bold;*/
+                align-items: center;
+                font-size: 15px;
+            }
+        }
+        /*.col-sm-12  {
+              background-color: #e7e9e6;
+          }*/
+
+        /*.navbar-toggler-icon {
+            margin-right: -60%;
+        }*/
+
+        .cQSLQU {
+            background-color: rgb(226, 33, 28) !important;
+        }
+
+        .fot {
+            font-family: 'ARB-187 Modern Caps';
+            color: black;
+            font-weight: bold;
+            margin-top: 8%;
+        }
+
+        .iconn {
+            width: 40px;
+            height: 40px;
+            margin: 7px;
+        }
+
+        .ons {
+            margin-top: 5% !important;
+        }
+
+        .mid .ons a {
+            font-weight: bold;
+            margin-right: 10px;
+            color: black;
+        }
+
+            .mid .ons a:hover {
+                color: rgb(226, 33, 28);
+            }
+
+        .ons2 {
+            margin-top: 3% !important;
+        }
+
+        .mid .ons2 a {
+            margin-right: 12px;
+            color: black;
+        }
+
+            .mid .ons2 a:hover {
+                color: rgb(226, 33, 28);
+            }
+
+        .ons3 {
+            margin-top: 3% !important;
+        }
+
+        .mid .ons3 a {
+            margin-right: 12px;
+            color: black;
+            text-decoration: underline;
+            padding-right: 10px;
+            border-right: 1px solid black;
+            font-size: 13px;
+        }
+
+            .mid .ons3 a:hover {
+                color: rgb(226, 33, 28);
+                border-right: 1px solid rgb(226, 33, 28);
+                text-decoration: underline;
+                text-decoration-color: rgb(226, 33, 28);
+            }
+
+        header {
+            width: 100%;
+            background-color: white;
+            box-shadow: none;
+            /*margin-bottom: 55%;*/
+        }
+        /*footer{
+              margin-top:5%;
+          }*/
+        .menu {
+            display: inline-block;
+            width: 100% !important;
+            margin-top: 7%;
+            background-size: contain;
+            position: relative;
+            background-color: #e7e9e6;
+            /*height:40px;*/
+        }
+
+        .men {
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 18px;
+            background-color: #e7e9e6;
+        }
+
+        .colbtn:hover {
+            background-color: rgb(226, 33, 28);
+            color: white;
+        }
+
+        .colbtn .men:hover {
+            background-color: rgb(226, 33, 28);
+            color: white;
+            border: 1px solid rgb(226, 33, 28);
+        }
+        /*.colbtn .men:active {
+            background-color: rgb(226, 33, 28) !important;
+            color: white !important;
+            border: 1px solid rgb(226, 33, 28) !important;
+        }*/
+        .active, .men:hover {
+            background-color: rgb(226, 33, 28);
+            color: white;
+            border: 1px solid rgb(226, 33, 28);
+        }
+
+        @media (min-width: 330px) and (max-width: 385px) {
+            .menu {
+                margin-top: 75%;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 450px) {
+            .menu {
+                margin-top: 71%;
+            }
+
+            .navbar-brand {
+                visibility: inherit;
+            }
+        }
+
+        @media (max-width: 280px) {
+            .menu {
+                margin-top: 95%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .menu {
+                margin-top: 85%;
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 1500px) {
+            .menu {
+                margin-top: 10%;
+            }
+        }
+
+        .trw {
+            font-family: 'ARB-187 Modern Caps';
+            color: black !important;
+            font-size: 50px;
+        }
+
+        .backg {
+            background-image: url('img/diamond-background.png');
+            display: inline-block;
+            width: 100% !important;
+            /*margin-top: -165%;*/
+            /*background-size:contain;*/
+            position: relative;
+            background-repeat: repeat;
+        }
+
+        .card-title {
+            font-family: 'ARB-187 Modern Caps';
+            color: black !important;
+        }
+
+        .card-text {
+            /*font-family: 'Brandon_reg_it';*/
+            font-family: BrandonGrotesque-Regular, Arial, Helvetica;
+            /*font-family:'Bradley Hand ITC';*/
+        }
+
+        .botn {
+            background-color: rgb(226, 33, 28);
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            /*width: 50%;
+            height: 50px;*/
+            font-size: initial;
+        }
+
+        .navbar-brand {
+            visibility: hidden;
+        }
+
+        .img {
+            background-image: url("https://koala-marketing-api-production.s3.amazonaws.com/round-table-pizza/assets/wings-with-sauce.jpeg");
+            display: inline-block;
+            width: 100% !important;
+            flex: 0 0 430px;
+            background-repeat: no-repeat;
+            /*background-position: center center;
+            background-size: cover;*/
+        }
+
+        .xx {
+            background-image: url('img/diamond-background.png');
+            display: inline-block;
+            width: 100% !important;
+            /*margin-top: -165%;*/
+            /*background-size:contain;*/
+            position: relative;
+            background-repeat: repeat;
+        }
+
+        .size_list li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .list {
+            border-right: 1px solid black;
+            margin-right: 2px;
+            /*padding:2px;*/
+            padding-right: 4px !important;
+        }
+
+        .deco {
+            font-family: 'ARB-187 Modern Caps';
+        }
+
+        .gf_txt {
+            position: absolute;
+            bottom: -0.5rem;
+            left: 2%;
+            font-size: 1rem;
+            text-transform: none;
+        }
+
+        .sub_section .img {
+            flex: 0 0 430px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .sub_section {
+            display: flex;
+            min-height: 234px;
+        }
+
+        .card {
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .log {
+                align-self: center;
+                font-size: 0.9em;
+                width: 100%;
+                margin: 1em 0em;
+                display: block;
+            }
+        }
+
+        .prop {
+            font-family: 'ARB-187 Modern Caps';
+            border-right: 1px solid rgb(226, 33, 28);
+            font-size: 15px;
+            margin-top: 0.1em;
+            margin-bottom: 0.1em;
+            font-size: 0.8em;
+            padding: 1em 0.8em;
+            float: right;
+            letter-spacing: 0.4px;
+            font-weight: lighter;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .yy {
+            font-family: 'ARB-187 Modern Caps';
+        }
+
+        .pizzalo {
+            background-image: url('img/how-to-redeem-thumbnail.jpeg');
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        .controls-1 {
+            display: block;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            align-self: center;
+        }
+
+        .input-xlarge {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        a.blue:hover {
+            background-color: #173777;
+        }
+
+        .blue {
+            background-color: #305298 !important;
+        }
+
+        .button--primary {
+            color: white;
+            border: none;
+            font-weight: normal;
+            padding: 8px 1.2em 8px 1.2em;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1em;
+        }
+
+        .card p {
+            font-size: 0.8em;
+            margin-bottom: 1em;
+        }
+
+        .card {
+            width: 600px;
+            height: auto;
+            font-size: 1.2em;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #MyLogin form {
+            width: 90% !important;
+        }
+
+        .card form {
+            width: 100%;
+            font-size: 0.8em;
+        }
+
+        #form2 {
+            width: auto;
+        }
+
+        .card input {
+            padding: 6px 10px;
+            margin: 2px 0;
+            align-self: center;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .log {
+            align-self: center;
+            width: 100%;
+            margin: 1em 0em;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+
+        .red {
+            background-color: var(--main-red);
+        }
+
+        .or {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .newaccountBtn {
+            width: 100% !important;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .gold {
+            background-color: #a86f39;
+        }
+
+        h5 > a {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .sign-up--card--fotter {
+            margin: 1em auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btonn {
+            color: white;
+            border: none;
+            font-weight: normal;
+            padding: 8px 1.2em 8px 1.2em;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1em;
+            background-color: #a86f39;
+        }
+
+            .btonn:hover {
+                color: white;
+            }
+
+        .rc-anchor-normal .rc-anchor-content {
+            height: 74px;
+            width: 206px;
+        }
+
+        .rc-anchor-content {
+            display: inline-block;
+            position: relative;
+        }
+
+        .rc-anchor-normal-footer {
+            display: inline-block;
+            height: 74px;
+            vertical-align: top;
+            width: 70px;
+        }
+
+        @media (max-width: 768px) {
+            .bot > .btonn {
+                flex: 1;
+            }
+        }
+
+        .bot {
+            /*margin-left: 1em;*/
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .head img {
+                width: 35%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .prop {
+                border-right: none;
+                border-left: 1px solid rgb(226, 33, 28);
+            }
+
+            .head {
+                padding: 10px;
+                /*height: 80px;*/
+            }
+
+            #sign {
+                font-size: 0.8em;
+                width: 90%;
+                padding: 2% 4%;
+                min-height: 80%;
+            }
+        }
+
+        .head {
+            /*display: flex;*/
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        @media (max-width: 450px) {
+            .under {
+                width: 50% !important;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .bot {
+                display: flex;
+                padding: 10px;
+                margin: 0;
+                background-color: var(--main-background-gray);
+                width: 100%;
+                height: 60px;
+            }
+
+            .card {
+                width: auto;
+                height: auto;
+                font-size: 1.2em;
+                padding: 2em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .facebookBtn {
+                padding-left: 9px !important;
+                padding-right: 9px !important;
+                display: inline-block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .bot > .btonn:nth-child(1) {
+                margin-right: 2vw;
+                flex: 1;
+            }
+
+            .yy {
+                font-size: 25px;
+            }
+
+            .yy2 {
+                font-size: 25px;
+            }
+        }
+
+        @media (max-width: 382px) {
+            .newaccountBtn {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .hedname {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 280px) {
+            .hedname {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 280px) {
+            .log a {
+                font-size: 14px;
+                height: -webkit-fill-available;
+            }
+            .log button {
+                font-size: 12px;
+                height: -webkit-fill-available;
+            }
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="container ">
+                <div class="row mt-3 mb-3">
+                    <div class="col-md-8 head">
+                        <a href="basic.html">
+                            <img src="img/12.png" class="img-fluid mr-auto " style="width:35%;" />
+                        </a>
+                        <a href="" style="text-decoration:none;" class="hedname">
+                            <span class=" prop pr-3">ROUNDTABLEPIZZA.COM</span>
+                        </a>
+
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-12 mt-3 bot">
+
+
+                        <!--<button class="bton mr-2 ml-3">LOG IN</button>
+                        <button class="bton ">SIGN UP</button>-->
+                        <a class="btonn " href="login.html">LOG IN</a>
+                        <a class="btonn " href="signin.html">SIGN UP</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="container-fluid pizzalo">
+
+        <div class="card  text-center wow zoomIn">
+            <h1 class="mt-3"><span style="font-weight: 400;">SIGN IN TO</span></h1>
+            <h1 class="yy">YOUR ACCOUNT</h1>
+            <img src="img/خط.JPG" class="img-fluid mt-4 mb-3 under" style="width:20%; align-self:center;" />
+            <p>Log in to see your account history, rewards and points.</p>
+            <form action="" class="form" data-ajax="true" data-ajax-mode="replace" data-ajax-update="#MyLogin" id="form0" method="post" autocomplete="off" novalidate="novalidate">
+                <div class="controls-1">
+                    <input class="input-xlarge" data-val="true" id="UserName" name="UserName" placeholder="Email" type="text" value="" autocomplete="off">
+                </div>
+                <div class="controls-1">
+                    <input class="input-xlarge" data-val="true" id="Password" name="Password" placeholder="Password" type="password" value="" autocomplete="off">
+                </div>
+                <br>
+                <div class="log">
+                    <button class="button--primary  col-4 bold red  margin-right-1" type="submit" name="LoginSubmit" id="LoginSubmit" value="Login">SIGN IN</button>
+                    <a href="#" id="login-buton" class="button--primary col-7 bold blue  facebookBtn" onclick="checkLoginState();">LOG IN WITH FACEBOOK</a>
+                </div>
+                <div class="or">
+                    <hr class="solid flex-1"> <span>OR</span> <hr class="solid flex-1">
+                </div>
+                <div class="form-Line-center">
+                    <a class="button--primary gold col-12 newaccountBtn" href="/Site/rtp/Signup?IsReset=True&amp;isReward=True&amp;nextUrl=%2FSite%2Frtp%2FRewardThankYou">CREATE A REWARDS ACCOUNT</a>
+                </div>
+            </form>
+
+
+
+            <form id="form2" action="?" method="POST" autocomplete="off" novalidate="novalidate">
+                <div id="login-captcha" class="g-recaptcha">
+                    <div style="width: 304px; height: 78px;">
+                        <div>
+                            <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcpVYAaAAAAAOL9RwIQyGTxoetxSdPaXVyKMwOa&amp;co=aHR0cHM6Ly9vcmRlcmluZy5yb3VuZHRhYmxlcGl6emEuY29tOjQ0Mw..&amp;hl=en&amp;v=6g5J7UfDQ9mLrweZHj04ekSP&amp;size=normal&amp;cb=5bqi04sffjvs"
+                                    width="304" height="78" role="presentation" name="a-p60pzupbhxqh" frameborder="0" scrolling="no"
+                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">
+                            </iframe>
+                        </div>
+                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                                  style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193);
+                     margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                    </div>
+                    <iframe style="display: none;"></iframe>
+                </div>
+                <br>
+
+            </form>
+
+
+
+            <div class="sign-up--card--fotter">
+                <h5><a href="" title="Forgot Password?">FORGOT PASSWORD?</a> </h5>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <footer class="wow zoomIn">
+
+        <div class="container-fluid wow slideInUp">
+            <img src="img/footer.JPG" class="img-fluid" style="height:25px; " />
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="col-md-12 wow slideInUp">
+                        <h4 class="fot">FOLLOW PIZZA ROYALTY</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <img src="img/iconTCFacebook.png" class="img-fluid iconn wow slideInUp" />
+
+                        <img src="img/iconTCTwitter.png" class="img-fluid iconn wow slideInUp" />
+                        <img src="img/iconTCInstagram.png" class="img-fluid iconn wow slideInUp" />
+                    </div>
+                </div>
+                <div class="col-md-8 mid">
+                    <div class="col-md-12 ons wow slideInUp">
+                        <a>About</a>
+                        <a>Press</a>
+                        <a>Careers</a>
+                        <a> Franchising</a>
+                        <a> Fundraising</a>
+                        <a> Catering</a>
+                        <a> Join eClub</a>
+                        <a>  Gift Cards</a>
+                    </div>
+                    <div class="col-md-12 ons2 wow slideInUp">
+                        <a>Contact Us</a>
+                        <a> Book a Party Room</a>
+                        <a> FAQ</a>
+                        <a>  Nutrition Info</a>
+                        <a> Allergen Info</a>
+
+                    </div>
+
+                    <div class="col-md-12 ons3 wow slideInUp">
+                        <a>Privacy Policy</a>
+                        <a> Terms of Use</a>
+                        <a>  Accessibility Statement</a>
+                        <a>  Do Not Sell My Personal Information</a>
+                        <a class="border-right-0">   Site Map</a>
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <p style="font-size:13px;">© 2020 by ROUND TABLE PIZZA A GLOBAL FRANCHISE GROUP® LLC COMPANY</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
